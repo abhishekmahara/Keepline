@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import linesReducer from './Redux/keeplineSlice'
+import keeplineReducer from './Redux/keeplineSlice'
 
 export const store = configureStore({
   reducer: {
-   line : linesReducer,
+     
+    keepline: keeplineReducer,
   },
 })
+
+export default store
